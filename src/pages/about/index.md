@@ -1,7 +1,6 @@
 ---
-templateKey: 'about-page'
-path: /about
-title: About our values
+templateKey: about-page
+title: About our values 2
 ---
 ### Shade-grown coffee
 המטרה שלנו היא לגרום לכם לשמור על אורח חיים בריא ופעיל
