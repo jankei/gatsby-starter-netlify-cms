@@ -98,7 +98,7 @@ function HeaderLinks({ ...props }) {
             <Link to="/about" className={classes.dropdownLink}>
               <AccountBalance className={classes.dropdownIcons} /> About Us
             </Link>,
-            <Link to="/contact-us" className={classes.dropdownLink}>
+            <Link to="/contact" className={classes.dropdownLink}>
               <LocationOn className={classes.dropdownIcons} /> Contact Us
             </Link>
           ]}

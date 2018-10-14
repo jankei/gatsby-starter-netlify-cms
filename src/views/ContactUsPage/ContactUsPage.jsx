@@ -1,33 +1,31 @@
 import React from "react";
-// nodejs library that concatenates classes
 import classNames from "classnames";
-// react components used to create a google map
+import { Link } from "gatsby";
 import {
   withScriptjs,
   withGoogleMap,
   GoogleMap,
   Marker
 } from "react-google-maps";
-// @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
-// @material-ui/icons
 import Favorite from "@material-ui/icons/Favorite";
 import PinDrop from "@material-ui/icons/PinDrop";
 import Phone from "@material-ui/icons/Phone";
 import BusinessCenter from "@material-ui/icons/BusinessCenter";
-// core components
-import Header from "components/Header/Header.jsx";
-import HeaderLinks from "components/Header/HeaderLinks.jsx";
-import GridContainer from "components/Grid/GridContainer.jsx";
-import GridItem from "components/Grid/GridItem.jsx";
-import InfoArea from "components/InfoArea/InfoArea.jsx";
-import CustomInput from "components/CustomInput/CustomInput.jsx";
-import Button from "components/CustomButtons/Button.jsx";
-import Footer from "components/Footer/Footer.jsx";
 
-import contactUsStyle from "assets/jss/material-kit-pro-react/views/contactUsStyle.jsx";
+import Header from "../../components/Header/Header.jsx";
+import HeaderLinks from "../../components/Header/HeaderLinks.jsx";
+import GridContainer from "../../components/Grid/GridContainer.jsx";
+import GridItem from "../../components/Grid/GridItem.jsx";
+import InfoArea from "../../components/InfoArea/InfoArea.jsx";
+import CustomInput from "../../components/CustomInput/CustomInput.jsx";
+import Button from "../../components/CustomButtons/Button.jsx";
+import Footer from "../../components/Footer/Footer.jsx";
+
+import contactUsStyle from "../../assets/jss/material-kit-pro-react/views/contactUsStyle.jsx";
+import Content, { HTMLContent } from "../../components/Content";
 
 const CustomSkinMap = withScriptjs(
   withGoogleMap(props => (
@@ -111,6 +109,7 @@ class ContactUsPage extends React.Component {
   }
   render() {
     const { classes } = this.props;
+    const PageContent = this.props.contentComponent || Content;
     return (
       <div>
         <Header
@@ -220,8 +219,8 @@ class ContactUsPage extends React.Component {
                     title="Legal Information"
                     description={
                       <p>
-                        Creative Tim Ltd. <br /> VAT · EN2341241 <br /> IBAN ·
-                        EN8732ENGB2300099123 <br /> Bank · Great Britain Bank
+                        Boxify Ltd. <br /> VAT · EN2341241 <br /> IBAN ·
+                        EN8732ENGB2300099123 <br /> Bank · Bank Hapoalim
                       </p>
                     }
                     icon={BusinessCenter}
@@ -238,44 +237,20 @@ class ContactUsPage extends React.Component {
               <div className={classes.left}>
                 <List className={classes.list}>
                   <ListItem className={classes.inlineBlock}>
-                    <a
-                      href="https://www.creative-tim.com/"
-                      className={classes.block}
-                    >
-                      Creative Tim
-                    </a>
-                  </ListItem>
-                  <ListItem className={classes.inlineBlock}>
-                    <a
-                      href="https://www.creative-tim.com/presentation"
-                      className={classes.block}
-                    >
+                    <Link to="/about" className={classes.block}>
                       About us
-                    </a>
+                    </Link>
                   </ListItem>
                   <ListItem className={classes.inlineBlock}>
-                    <a
-                      href="//blog.creative-tim.com/"
-                      className={classes.block}
-                    >
-                      Blog
-                    </a>
-                  </ListItem>
-                  <ListItem className={classes.inlineBlock}>
-                    <a
-                      href="https://www.creative-tim.com/license"
-                      className={classes.block}
-                    >
+                    <Link to="/licenses" className={classes.block}>
                       Licenses
-                    </a>
+                    </Link>
                   </ListItem>
                 </List>
               </div>
               <div className={classes.right}>
-            &copy; {1900 + new Date().getYear()} , made with{" "}
-            <Favorite className={classes.icon} /> by{" "}
-            <a href="https://www.creative-tim.com">Creative Tim</a> for a
-            better web.
+                &copy; {1900 + new Date().getYear()} , made with{" "}
+                <Favorite className={classes.icon} /> by Boxify
               </div>
             </div>
           }

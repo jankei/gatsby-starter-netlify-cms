@@ -1,5 +1,5 @@
 ---
-templateKey: about-page
+templateKey: contact-page
 title: עלינו
 ---
 המטרה שלנו היא לגרום לכם לשמור על אורח חיים בריא ופעיל

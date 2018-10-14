@@ -58,7 +58,9 @@ class AboutUsPage extends React.Component {
                   classes.textCenter
                 )}
               >
-                <h1 className={classes.title}>עלינו</h1>
+                <h1 className={classes.title}>
+                  <PageContent content={this.props.title} />
+                </h1>
                 <h4>
                   <PageContent content={this.props.content} />
                 </h4>
