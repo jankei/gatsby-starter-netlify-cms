@@ -1,20 +1,18 @@
 import React from "react";
-// nodejs library that concatenates classes
 import classNames from "classnames";
-// @material-ui/core components
+import { Link } from "gatsby";
 import withStyles from "@material-ui/core/styles/withStyles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
-// @material-ui/icons
 import Favorite from "@material-ui/icons/Favorite";
-// core components
+
 import Header from "../../components/Header/Header.jsx";
 import GridContainer from "../../components/Grid/GridContainer.jsx";
 import GridItem from "../../components/Grid/GridItem.jsx";
 import Parallax from "../../components/Parallax/Parallax.jsx";
 import Footer from "../../components/Footer/Footer.jsx";
-// sections for this page
 import HeaderLinks from "../../components/Header/HeaderLinks.jsx";
+
 import SectionDescription from "./Sections/SectionDescription.jsx";
 import SectionTeam from "./Sections/SectionTeam.jsx";
 import SectionServices from "./Sections/SectionServices.jsx";
@@ -22,6 +20,7 @@ import SectionOffice from "./Sections/SectionOffice.jsx";
 import SectionContact from "./Sections/SectionContact";
 
 import aboutUsStyle from "../../assets/jss/material-kit-pro-react/views/aboutUsStyle.jsx";
+import Content, { HTMLContent } from "../../components/Content";
 
 class AboutUsPage extends React.Component {
   componentDidMount() {
@@ -30,6 +29,7 @@ class AboutUsPage extends React.Component {
   }
   render() {
     const { classes } = this.props;
+    const PageContent = this.props.contentComponent || Content;
     return (
       <div>
         <Header
@@ -59,7 +59,9 @@ class AboutUsPage extends React.Component {
                 )}
               >
                 <h1 className={classes.title}>עלינו</h1>
-                <h4 dangerouslySetInnerHTML={{ __html: this.props.content }} />
+                <h4>
+                  <PageContent content={this.props.content} />
+                </h4>
               </GridItem>
             </GridContainer>
           </div>
@@ -79,44 +81,20 @@ class AboutUsPage extends React.Component {
               <div className={classes.left}>
                 <List className={classes.list}>
                   <ListItem className={classes.inlineBlock}>
-                    <a
-                      href="https://www.creative-tim.com/"
-                      className={classes.block}
-                    >
-                      Creative Tim
-                    </a>
-                  </ListItem>
-                  <ListItem className={classes.inlineBlock}>
-                    <a
-                      href="https://www.creative-tim.com/presentation"
-                      className={classes.block}
-                    >
+                    <Link to="/about" className={classes.block}>
                       About us
-                    </a>
+                    </Link>
                   </ListItem>
                   <ListItem className={classes.inlineBlock}>
-                    <a
-                      href="//blog.creative-tim.com/"
-                      className={classes.block}
-                    >
-                      Blog
-                    </a>
-                  </ListItem>
-                  <ListItem className={classes.inlineBlock}>
-                    <a
-                      href="https://www.creative-tim.com/license"
-                      className={classes.block}
-                    >
+                    <Link to="/licenses" className={classes.block}>
                       Licenses
-                    </a>
+                    </Link>
                   </ListItem>
                 </List>
               </div>
               <div className={classes.right}>
                 &copy; {1900 + new Date().getYear()} , made with{" "}
-                <Favorite className={classes.icon} /> by{" "}
-                <a href="https://www.creative-tim.com">Creative Tim</a> for a
-                better web.
+                <Favorite className={classes.icon} /> by Boxify
               </div>
             </div>
           }
