@@ -33,7 +33,7 @@ class AboutUsPage extends React.Component {
     return (
       <div>
         <Header
-          brand="Material Kit PRO React"
+          brand="Boxify"
           links={<HeaderLinks dropdownHoverColor="info" />}
           fixed
           color="transparent"
