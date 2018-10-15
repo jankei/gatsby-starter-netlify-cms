@@ -7,11 +7,11 @@ import {
   title,
   cardTitle,
   roseColor
-} from "assets/jss/material-kit-pro-react.jsx";
+} from "../../material-kit-pro-react.jsx";
 
-import tooltipsStyle from "assets/jss/material-kit-pro-react/tooltipsStyle.jsx";
-import imagesStyles from "assets/jss/material-kit-pro-react/imagesStyles.jsx";
-import customSelectStyle from "assets/jss/material-kit-pro-react/customSelectStyle.jsx";
+import tooltipsStyle from "../../material-kit-pro-react/tooltipsStyle.jsx";
+import imagesStyles from "../../material-kit-pro-react/imagesStyles.jsx";
+import customSelectStyle from "../../material-kit-pro-react/customSelectStyle.jsx";
 
 const productStyle = {
   mlAuto,

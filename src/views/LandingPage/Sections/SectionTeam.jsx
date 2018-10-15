@@ -4,22 +4,22 @@ import withStyles from "@material-ui/core/styles/withStyles";
 // @material-ui/icons
 // import  from "@material-ui/icons/";
 // core components
-import GridContainer from "components/Grid/GridContainer.jsx";
-import GridItem from "components/Grid/GridItem.jsx";
-import Card from "components/Card/Card.jsx";
-import CardHeader from "components/Card/CardHeader.jsx";
-import CardBody from "components/Card/CardBody.jsx";
-import CardFooter from "components/Card/CardFooter.jsx";
-import Muted from "components/Typography/Muted.jsx";
-import Button from "components/CustomButtons/Button.jsx";
+import GridContainer from "../../../components/Grid/GridContainer.jsx";
+import GridItem from "../../../components/Grid/GridItem.jsx";
+import Card from "../../../components/Card/Card.jsx";
+import CardHeader from "../../../components/Card/CardHeader.jsx";
+import CardBody from "../../../components/Card/CardBody.jsx";
+import CardFooter from "../../../components/Card/CardFooter.jsx";
+import Muted from "../../../components/Typography/Muted.jsx";
+import Button from "../../../components/CustomButtons/Button.jsx";
 
-import cardProfile1Square from "assets/img/faces/card-profile1-square.jpg";
-import cardProfile2Square from "assets/img/faces/card-profile2-square.jpg";
-import cardProfile4Square from "assets/img/faces/card-profile4-square.jpg";
-import cardProfile6Square from "assets/img/faces/card-profile6-square.jpg";
+import cardProfile1Square from "../../../assets/img/faces/card-profile1-square.jpg";
+import cardProfile2Square from "../../../assets/img/faces/card-profile2-square.jpg";
+import cardProfile4Square from "../../../assets/img/faces/card-profile4-square.jpg";
+import cardProfile6Square from "../../../assets/img/faces/card-profile6-square.jpg";
 
-import teamsStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/teamsStyle.jsx";
-import teamStyle from "assets/jss/material-kit-pro-react/views/landingPageSections/teamStyle.jsx";
+import teamsStyle from "../../../assets/jss/material-kit-pro-react/views/sectionsSections/teamsStyle.jsx";
+import teamStyle from "../../../assets/jss/material-kit-pro-react/views/landingPageSections/teamStyle.jsx";
 
 const style = {
   ...teamsStyle,

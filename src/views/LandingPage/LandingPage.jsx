@@ -1,24 +1,22 @@
 import React from "react";
-// nodejs library that concatenates classes
 import classNames from "classnames";
-// @material-ui/core components
+import { Link } from "gatsby";
 import withStyles from "@material-ui/core/styles/withStyles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
-// @material-ui/icons
 import Favorite from "@material-ui/icons/Favorite";
-// core components
-import Header from "components/Header/Header.jsx";
-import Footer from "components/Footer/Footer.jsx";
-import GridContainer from "components/Grid/GridContainer.jsx";
-import GridItem from "components/Grid/GridItem.jsx";
-import Button from "components/CustomButtons/Button.jsx";
-import HeaderLinks from "components/Header/HeaderLinks.jsx";
-import Parallax from "components/Parallax/Parallax.jsx";
 
-import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPageStyle.jsx";
+import Header from "../../components/Header/Header.jsx";
+import Footer from "../../components/Footer/Footer.jsx";
+import GridContainer from "../../components/Grid/GridContainer.jsx";
+import GridItem from "../../components/Grid/GridItem.jsx";
+import Button from "../../components/CustomButtons/Button.jsx";
+import HeaderLinks from "../../components/Header/HeaderLinks.jsx";
+import Parallax from "../../components/Parallax/Parallax.jsx";
 
-// Sections for this page
+import Content, { HTMLContent } from "../../components/Content";
+import landingPageStyle from "../../assets/jss/material-kit-pro-react/views/landingPageStyle.jsx";
+
 import SectionProduct from "./Sections/SectionProduct.jsx";
 import SectionTeam from "./Sections/SectionTeam.jsx";
 import SectionWork from "./Sections/SectionWork.jsx";
@@ -37,7 +35,7 @@ class LandingPage extends React.Component {
         <Header
           color="transparent"
           routes={dashboardRoutes}
-          brand="Material Kit PRO React"
+          brand="Boxify"
           links={<HeaderLinks dropdownHoverColor="info" />}
           fixed
           changeColorOnScroll={{
@@ -46,7 +44,10 @@ class LandingPage extends React.Component {
           }}
           {...rest}
         />
-        <Parallax image={require("assets/img/landingpage.jpg")} filter="dark">
+        <Parallax
+          image={require("../../assets/img/landingpage.jpg")}
+          filter="dark"
+        >
           <div className={classes.container}>
             <GridContainer>
               <GridItem xs={12} sm={6} md={6}>
@@ -61,7 +62,7 @@ class LandingPage extends React.Component {
                 <Button
                   color="danger"
                   size="lg"
-                  href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                  href="https://www.youtube.com/watch?v=XfqY0BAaJ-k"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -85,44 +86,20 @@ class LandingPage extends React.Component {
               <div className={classes.left}>
                 <List className={classes.list}>
                   <ListItem className={classes.inlineBlock}>
-                    <a
-                      href="https://www.creative-tim.com/"
-                      className={classes.block}
-                    >
-                      Creative Tim
-                    </a>
-                  </ListItem>
-                  <ListItem className={classes.inlineBlock}>
-                    <a
-                      href="https://www.creative-tim.com/presentation"
-                      className={classes.block}
-                    >
+                    <Link to="/about" className={classes.block}>
                       About us
-                    </a>
+                    </Link>
                   </ListItem>
                   <ListItem className={classes.inlineBlock}>
-                    <a
-                      href="//blog.creative-tim.com/"
-                      className={classes.block}
-                    >
-                      Blog
-                    </a>
-                  </ListItem>
-                  <ListItem className={classes.inlineBlock}>
-                    <a
-                      href="https://www.creative-tim.com/license"
-                      className={classes.block}
-                    >
+                    <Link to="/licenses" className={classes.block}>
                       Licenses
-                    </a>
+                    </Link>
                   </ListItem>
                 </List>
               </div>
               <div className={classes.right}>
                 &copy; {1900 + new Date().getYear()} , made with{" "}
-                <Favorite className={classes.icon} /> by{" "}
-                <a href="https://www.creative-tim.com">Creative Tim</a> for a
-                better web.
+                <Favorite className={classes.icon} /> by Boxify
               </div>
             </div>
           }

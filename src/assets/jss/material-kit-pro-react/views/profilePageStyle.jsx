@@ -6,11 +6,11 @@ import {
   mrAuto,
   main,
   mainRaised
-} from "assets/jss/material-kit-pro-react.jsx";
+} from "../../material-kit-pro-react.jsx";
 
-import imagesStyle from "assets/jss/material-kit-pro-react/imagesStyles.jsx";
+import imagesStyle from "../../material-kit-pro-react/imagesStyles.jsx";
 
-import tooltipsStyle from "assets/jss/material-kit-pro-react/tooltipsStyle.jsx";
+import tooltipsStyle from "../../material-kit-pro-react/tooltipsStyle.jsx";
 
 const profilePageStyle = {
   container,
