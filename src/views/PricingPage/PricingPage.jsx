@@ -1,24 +1,20 @@
 import React from "react";
-// nodejs library that concatenates classes
 import classNames from "classnames";
-// @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
-// @material-ui/icons
 import Favorite from "@material-ui/icons/Favorite";
-// core components
-import Header from "components/Header/Header.jsx";
-import HeaderLinks from "components/Header/HeaderLinks.jsx";
-import Parallax from "components/Parallax/Parallax.jsx";
-import GridContainer from "components/Grid/GridContainer.jsx";
-import GridItem from "components/Grid/GridItem.jsx";
-import Footer from "components/Footer/Footer.jsx";
-// sections for this page
-import SectionPricing from "views/PricingPage/Sections/SectionPricing.jsx";
-import SectionFeatures from "views/PricingPage/Sections/SectionFeatures.jsx";
 
-import pricingStyle from "assets/jss/material-kit-pro-react/views/pricingStyle.jsx";
+import Header from "../../components/Header/Header.jsx";
+import HeaderLinks from "../../components/Header/HeaderLinks.jsx";
+import Parallax from "../../components/Parallax/Parallax.jsx";
+import GridContainer from "../../components/Grid/GridContainer.jsx";
+import GridItem from "../../components/Grid/GridItem.jsx";
+import Footer from "../../components/Footer/Footer.jsx";
+import SectionPricing from "./Sections/SectionPricing.jsx";
+import SectionFeatures from "./Sections/SectionFeatures.jsx";
+
+import pricingStyle from "../../assets/jss/material-kit-pro-react/views/pricingStyle.jsx";
 
 class PricingPage extends React.Component {
   componentDidMount() {
@@ -40,7 +36,11 @@ class PricingPage extends React.Component {
           }}
         />
 
-        <Parallax image={require("assets/img/bg2.jpg")} filter="dark" small>
+        <Parallax
+          image={require("../../assets/img/bg2.jpg")}
+          filter="dark"
+          small
+        >
           <div className={classes.container}>
             <GridContainer>
               <GridItem

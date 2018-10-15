@@ -1,13 +1,10 @@
 import React from "react";
-// used for making the prop types of this component
 import PropTypes from "prop-types";
-// @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
-// core components
-import CustomInput from "components/CustomInput/CustomInput.jsx";
-import Button from "components/CustomButtons/Button.jsx";
+import CustomInput from "../CustomInput/CustomInput.jsx";
+import Button from "../CustomButtons/Button.jsx";
 
-import styles from "assets/jss/material-kit-pro-react/components/customFileInputStyle.jsx";
+import styles from "../../assets/jss/material-kit-pro-react/components/customFileInputStyle.jsx";
 
 class CustomFileInput extends React.Component {
   constructor(props) {

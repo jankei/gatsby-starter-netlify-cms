@@ -1,8 +1,4 @@
-import {
-  mrAuto,
-  mlAuto,
-  cardTitle
-} from "assets/jss/material-kit-pro-react.jsx";
+import { mrAuto, mlAuto, cardTitle } from "../../../material-kit-pro-react.jsx";
 
 const pricingStyle = {
   mrAuto,

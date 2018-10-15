@@ -1,10 +1,6 @@
 import React from "react";
-// nodejs library that concatenates classes
 import classNames from "classnames";
-// nodejs library to set properties for components
 import PropTypes from "prop-types";
-
-// @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 // import Card from "@material-ui/core/Card";
 // import CardContent from "@material-ui/core/Card/CardContent";
@@ -12,11 +8,10 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 
-// core components
-import Card from "components/Card/Card.jsx";
-import CardBody from "components/Card/CardBody.jsx";
-import CardHeader from "components/Card/CardHeader.jsx";
-import customTabsStyle from "assets/jss/material-kit-pro-react/components/customTabsStyle.jsx";
+import Card from "../Card/Card.jsx";
+import CardBody from "../Card/CardBody.jsx";
+import CardHeader from "../Card/CardHeader.jsx";
+import customTabsStyle from "../../assets/jss/material-kit-pro-react/components/customTabsStyle.jsx";
 
 class CustomTabs extends React.Component {
   state = {

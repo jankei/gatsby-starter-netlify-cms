@@ -1,17 +1,15 @@
 import React from "react";
-// nodejs library that concatenates classes
 import classNames from "classnames";
-// core components
-import GridContainer from "components/Grid/GridContainer.jsx";
-import GridItem from "components/Grid/GridItem.jsx";
-import NavPills from "components/NavPills/NavPills.jsx";
-import Card from "components/Card/Card.jsx";
-import CardBody from "components/Card/CardBody.jsx";
-import Button from "components/CustomButtons/Button.jsx";
-// @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 
-import pricingStyle from "assets/jss/material-kit-pro-react/views/pricingSections/pricingStyle.jsx";
+import GridContainer from "../../../components/Grid/GridContainer.jsx";
+import GridItem from "../../../components/Grid/GridItem.jsx";
+import NavPills from "../../../components/NavPills/NavPills.jsx";
+import Card from "../../../components/Card/Card.jsx";
+import CardBody from "../../../components/Card/CardBody.jsx";
+import Button from "../../../components/CustomButtons/Button.jsx";
+
+import pricingStyle from "../../../assets/jss/material-kit-pro-react/views/pricingSections/pricingStyle.jsx";
 
 function SectionPricing(props) {
   const { classes } = props;
@@ -79,7 +77,8 @@ function SectionPricing(props) {
             <CardBody pricing>
               <h6 className={classes.cardCategory}>Premium</h6>
               <h1 className={classes.cardTitleWhite}>
-                <small>$</small>89 <small>/mo</small>
+                <small>$</small>
+                89 <small>/mo</small>
               </h1>
               <ul>
                 <li>
@@ -110,7 +109,8 @@ function SectionPricing(props) {
                 Platinum
               </h6>
               <h1 className={classes.cardTitle}>
-                <small>$</small>199 <small>/mo</small>
+                <small>$</small>
+                199 <small>/mo</small>
               </h1>
               <ul>
                 <li>

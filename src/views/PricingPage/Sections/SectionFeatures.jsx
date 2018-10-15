@@ -1,17 +1,15 @@
 import React from "react";
-// core components
-import GridContainer from "components/Grid/GridContainer.jsx";
-import GridItem from "components/Grid/GridItem.jsx";
-import InfoArea from "components/InfoArea/InfoArea.jsx";
-// @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
-// @material-ui icons
 import CardMembership from "@material-ui/icons/CardMembership";
 import CardGiftCard from "@material-ui/icons/CardGiftcard";
 import AttachMoney from "@material-ui/icons/AttachMoney";
 import QuestionAnswer from "@material-ui/icons/QuestionAnswer";
 
-import featuresStyle from "assets/jss/material-kit-pro-react/views/pricingSections/featuresStyle.jsx";
+import GridContainer from "../../../components/Grid/GridContainer.jsx";
+import GridItem from "../../../components/Grid/GridItem.jsx";
+import InfoArea from "../../../components/InfoArea/InfoArea.jsx";
+
+import featuresStyle from "../../../assets/jss/material-kit-pro-react/views/pricingSections/featuresStyle.jsx";
 
 function SectionFeatures(props) {
   const { classes } = props;
