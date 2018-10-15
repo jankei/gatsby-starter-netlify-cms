@@ -100,6 +100,12 @@ function HeaderLinks({ ...props }) {
             </Link>,
             <Link to="/contact" className={classes.dropdownLink}>
               <LocationOn className={classes.dropdownIcons} /> Contact Us
+            </Link>,
+            <Link to="/landing" className={classes.dropdownLink}>
+              <ViewDay className={classes.dropdownIcons} /> Landing Page
+            </Link>,
+            <Link to="/pricing" className={classes.dropdownLink}>
+              <AttachMoney className={classes.dropdownIcons} /> Pricing Page
             </Link>
           ]}
         />
