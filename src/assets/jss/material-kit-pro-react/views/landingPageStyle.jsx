@@ -6,10 +6,12 @@ import {
 } from "../../material-kit-pro-react.jsx";
 
 const landingPageStyle = {
+  main,
+  mainRaised,
   container: {
     color: "#FFFFFF",
     ...container,
-    zIndex: "2"
+    zIndex: 2
   },
   title: {
     ...title,
@@ -24,12 +26,6 @@ const landingPageStyle = {
     fontSize: "1.313rem",
     maxWidth: "500px",
     margin: "10px auto 0"
-  },
-  main: {
-    ...main
-  },
-  mainRaised: {
-    ...mainRaised
   },
   block: {
     color: "inherit",

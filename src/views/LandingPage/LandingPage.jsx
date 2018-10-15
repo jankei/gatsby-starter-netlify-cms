@@ -17,15 +17,15 @@ import Parallax from "../../components/Parallax/Parallax.jsx";
 import Content, { HTMLContent } from "../../components/Content";
 import landingPageStyle from "../../assets/jss/material-kit-pro-react/views/landingPageStyle.jsx";
 
-/* import SectionProduct from "./Sections/SectionProduct.jsx";
- * import SectionTeam from "./Sections/SectionTeam.jsx";
- * import SectionWork from "./Sections/SectionWork.jsx";
- *  */
+import SectionProduct from "./Sections/SectionProduct.jsx";
+import SectionTeam from "./Sections/SectionTeam.jsx";
+import SectionWork from "./Sections/SectionWork.jsx";
+
 const dashboardRoutes = [];
 
 class LandingPage extends React.Component {
   componentDidMount() {
-    /* window.scrollTo(0, 0); */
+    window.scrollTo(0, 0);
     document.body.scrollTop = 0;
   }
   render() {
@@ -59,27 +59,27 @@ class LandingPage extends React.Component {
                   first impression.
                 </h4>
                 <br />
-                {/* <Button
-                    color="danger"
-                    size="lg"
-                    href="https://www.youtube.com/watch?v=XfqY0BAaJ-k"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >
-                    <i className="fas fa-play" />
-                    Watch video
-                    </Button> */}
+                <Button
+                  color="danger"
+                  size="lg"
+                  href="https://www.youtube.com/watch?v=XfqY0BAaJ-k"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="fas fa-play" />
+                  Watch video
+                </Button>
               </GridItem>
             </GridContainer>
           </div>
         </Parallax>
-        {/* <div className={classNames(classes.main, classes.mainRaised)}>
-            <div className={classes.container}>
+        <div className={classNames(classes.main, classes.mainRaised)}>
+          <div className={classes.container}>
             <SectionProduct />
             <SectionTeam />
             <SectionWork />
-            </div>
-            </div> */}
+          </div>
+        </div>
         <Footer
           content={
             <div>
