@@ -9,7 +9,7 @@ const ContactPage = ({ data }) => {
   const { markdownRemark: post } = data;
 
   return (
-    <Layout>
+    <Layout classPrefix="cp">
       <ContactUsPage
         contentComponent={HTMLContent}
         title={post.frontmatter.title}

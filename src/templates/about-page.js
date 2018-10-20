@@ -36,7 +36,7 @@ const AboutPage = ({ data }) => {
   const { markdownRemark: post } = data;
 
   return (
-    <Layout>
+    <Layout classPrefix="ap">
       <AboutUsPage
         contentComponent={HTMLContent}
         title={post.frontmatter.title}

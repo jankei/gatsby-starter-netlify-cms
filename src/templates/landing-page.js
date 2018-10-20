@@ -9,7 +9,7 @@ const LandingPage = ({ data }) => {
   const { markdownRemark: post } = data;
 
   return (
-    <Layout>
+    <Layout classPrefix="lp">
       <LandingPageView
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
