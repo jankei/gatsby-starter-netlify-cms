@@ -38,6 +38,7 @@
     "react-google-maps": "9.4.5",
     "react-helmet": "^5.2.0",
     "react-image-gallery": "0.8.10",
+    "react-jss": "^8.6.1",
     "react-nouislider": "2.0.1",
     "react-parallax": "1.7.0",
     "react-slick": "0.23.1",
