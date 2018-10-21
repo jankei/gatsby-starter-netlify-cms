@@ -6,6 +6,8 @@ import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import Favorite from "@material-ui/icons/Favorite";
 
+import withRoot from "../../withRoot";
+
 import Header from "../../components/Header/Header.jsx";
 import HeaderLinks from "../../components/Header/HeaderLinks.jsx";
 import Parallax from "../../components/Parallax/Parallax.jsx";
@@ -99,4 +101,4 @@ class PricingPage extends React.Component {
   }
 }
 
-export default withStyles(pricingStyle)(PricingPage);
+export default withRoot(withStyles(pricingStyle)(PricingPage));
