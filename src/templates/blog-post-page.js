@@ -3,14 +3,14 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
-import LandingPageView from "../views/LandingPage/LandingPage";
+import BlogPostView from "../views/BlogPostPage/BlogPostPage";
 
-const LandingPage = ({ data }) => {
+const BlogPostPage = ({ data }) => {
   const { markdownRemark: post } = data;
 
   return (
-    <Layout classPrefix="lp">
-      <LandingPageView
+    <Layout>
+      <BlogPostView
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         content={post.html}
@@ -19,14 +19,14 @@ const LandingPage = ({ data }) => {
   );
 };
 
-LandingPage.propTypes = {
+BlogPostPage.propTypes = {
   data: PropTypes.object.isRequired
 };
 
-export default LandingPage;
+export default BlogPostPage;
 
-export const landingPageQuery = graphql`
-  query LandingPage($id: String!) {
+export const blogPostPageQuery = graphql`
+  query blogPostPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {

@@ -2,18 +2,16 @@ import React from "react";
 
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
-// @material-ui/icons
-// core components
-import GridContainer from "components/Grid/GridContainer.jsx";
-import GridItem from "components/Grid/GridItem.jsx";
-import Badge from "components/Badge/Badge.jsx";
-import Button from "components/CustomButtons/Button.jsx";
-import Card from "components/Card/Card.jsx";
-import CardAvatar from "components/Card/CardAvatar.jsx";
+import GridContainer from "../../../components/Grid/GridContainer.jsx";
+import GridItem from "../../../components/Grid/GridItem.jsx";
+import Badge from "../../../components/Badge/Badge.jsx";
+import Button from "../../../components/CustomButtons/Button.jsx";
+import Card from "../../../components/Card/Card.jsx";
+import CardAvatar from "../../../components/Card/CardAvatar.jsx";
 
-import profileImage from "assets/img/faces/card-profile1-square.jpg";
+import profileImage from "../../../assets/img/faces/card-profile1-square.jpg";
 
-import sectionBlogInfoStyle from "assets/jss/material-kit-pro-react/views/blogPostSections/sectionBlogInfoStyle.jsx";
+import sectionBlogInfoStyle from "../../../assets/jss/material-kit-pro-react/views/blogPostSections/sectionBlogInfoStyle.jsx";
 
 function SectionBlogInfo({ ...props }) {
   const { classes } = props;

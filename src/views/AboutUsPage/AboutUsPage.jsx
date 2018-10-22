@@ -10,7 +10,7 @@ import Header from "../../components/Header/Header.jsx";
 import GridContainer from "../../components/Grid/GridContainer.jsx";
 import GridItem from "../../components/Grid/GridItem.jsx";
 import Parallax from "../../components/Parallax/Parallax.jsx";
-import Footer from "../../components/Footer/Footer.jsx";
+import Footer from "../../components/Footer";
 import HeaderLinks from "../../components/Header/HeaderLinks.jsx";
 
 import SectionDescription from "./Sections/SectionDescription.jsx";
@@ -46,61 +46,18 @@ class AboutUsPage extends React.Component {
           image={require("../../assets/img/aboutus.jpg")}
           filter="dark"
           small
-        >
-          <div className={classes.container}>
-            <GridContainer justify="center">
-              <GridItem
-                md={8}
-                sm={8}
-                className={classNames(
-                  classes.mlAuto,
-                  classes.mrAuto,
-                  classes.textCenter
-                )}
-              >
-                <h1 className={classes.title}>
-                  <PageContent content={this.props.title} />
-                </h1>
-                <h4>
-                  <PageContent content={this.props.content} />
-                </h4>
-              </GridItem>
-            </GridContainer>
-          </div>
-        </Parallax>
+        />
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
+            <PageContent content={this.props.title} />
+            <PageContent content={this.props.content} />
             <SectionDescription />
             <SectionTeam />
-            <SectionServices />
             <SectionOffice />
             <SectionContact />
           </div>
         </div>
-        <Footer
-          content={
-            <div>
-              <div className={classes.left}>
-                <List className={classes.list}>
-                  <ListItem className={classes.inlineBlock}>
-                    <Link to="/about" className={classes.block}>
-                      About us
-                    </Link>
-                  </ListItem>
-                  <ListItem className={classes.inlineBlock}>
-                    <Link to="/licenses" className={classes.block}>
-                      Licenses
-                    </Link>
-                  </ListItem>
-                </List>
-              </div>
-              <div className={classes.right}>
-                &copy; {1900 + new Date().getYear()} , made with{" "}
-                <Favorite className={classes.icon} /> by Boxify
-              </div>
-            </div>
-          }
-        />
+        <Footer />
       </div>
     );
   }

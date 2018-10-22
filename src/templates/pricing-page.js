@@ -9,7 +9,7 @@ const PricingPageTemplate = ({ data }) => {
   const { markdownRemark: post } = data;
 
   return (
-    <Layout classPrefix="pp">
+    <Layout>
       <PricingPage
         contentComponent={HTMLContent}
         title={post.frontmatter.title}

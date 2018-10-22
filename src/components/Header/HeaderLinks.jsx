@@ -32,6 +32,7 @@ import AccountCircle from "@material-ui/icons/AccountCircle";
 import PersonAdd from "@material-ui/icons/PersonAdd";
 import Layers from "@material-ui/icons/Layers";
 import ShoppingBasket from "@material-ui/icons/ShoppingBasket";
+import DateRange from "@material-ui/icons/DateRange";
 import LineStyle from "@material-ui/icons/LineStyle";
 
 // core components
@@ -101,11 +102,14 @@ function HeaderLinks({ ...props }) {
             <Link to="/contact" className={classes.dropdownLink}>
               <LocationOn className={classes.dropdownIcons} /> Contact Us
             </Link>,
-            <Link to="/landing" className={classes.dropdownLink}>
-              <ViewDay className={classes.dropdownIcons} /> Landing Page
+            <Link to="/join" className={classes.dropdownLink}>
+              <ViewDay className={classes.dropdownIcons} /> Join
             </Link>,
             <Link to="/pricing" className={classes.dropdownLink}>
-              <AttachMoney className={classes.dropdownIcons} /> Pricing Page
+              <AttachMoney className={classes.dropdownIcons} /> Pricing
+            </Link>,
+            <Link to="/schedule" className={classes.dropdownLink}>
+              <DateRange className={classes.dropdownIcons} /> Schedule
             </Link>
           ]}
         />

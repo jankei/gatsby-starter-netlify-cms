@@ -4,16 +4,16 @@ import classNames from "classnames";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 // @material-ui/icons
-import GridContainer from "components/Grid/GridContainer.jsx";
-import GridItem from "components/Grid/GridItem.jsx";
-import Quote from "components/Typography/Quote.jsx";
+import GridContainer from "../../../components/Grid/GridContainer.jsx";
+import GridItem from "../../../components/Grid/GridItem.jsx";
+import Quote from "../../../components/Typography/Quote.jsx";
 // core components
 
-import blog4 from "assets/img/examples/blog4.jpg";
-import blog3 from "assets/img/examples/blog3.jpg";
-import blog1 from "assets/img/examples/blog1.jpg";
+import blog4 from "../../../assets/img/examples/blog4.jpg";
+import blog3 from "../../../assets/img/examples/blog3.jpg";
+import blog1 from "../../../assets/img/examples/blog1.jpg";
 
-import sectionTextStyle from "assets/jss/material-kit-pro-react/views/blogPostSections/sectionTextStyle.jsx";
+import sectionTextStyle from "../../../assets/jss/material-kit-pro-react/views/blogPostSections/sectionTextStyle.jsx";
 
 function SectionText({ ...props }) {
   const { classes } = props;
@@ -68,8 +68,7 @@ function SectionText({ ...props }) {
             there’s so many Kanyes I've been trying to figure out the bed design
             for the master bedroom at our Hidden Hills compound... and thank you
             for turning my personal jean jacket into a couture piece.
-            <br />
-            I speak yell scream directly at the old guard on behalf of the
+            <br />I speak yell scream directly at the old guard on behalf of the
             future. daytime All respect prayers and love to Phife’s family Thank
             you for so much inspiration.
           </p>
