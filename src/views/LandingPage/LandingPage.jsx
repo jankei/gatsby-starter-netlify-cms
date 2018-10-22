@@ -9,7 +9,7 @@ import Favorite from "@material-ui/icons/Favorite";
 import withRoot from "../../withRoot";
 
 import Header from "../../components/Header/Header.jsx";
-import Footer from "../../components/Footer/Footer.jsx";
+import Footer from "../../components/Footer";
 import GridContainer from "../../components/Grid/GridContainer.jsx";
 import GridItem from "../../components/Grid/GridItem.jsx";
 import Button from "../../components/CustomButtons/Button.jsx";
@@ -82,30 +82,7 @@ class LandingPage extends React.Component {
             <SectionWork />
           </div>
         </div>
-        <Footer
-          content={
-            <div>
-              <div className={classes.left}>
-                <List className={classes.list}>
-                  <ListItem className={classes.inlineBlock}>
-                    <Link to="/about" className={classes.block}>
-                      About us
-                    </Link>
-                  </ListItem>
-                  <ListItem className={classes.inlineBlock}>
-                    <Link to="/licenses" className={classes.block}>
-                      Licenses
-                    </Link>
-                  </ListItem>
-                </List>
-              </div>
-              <div className={classes.right}>
-                &copy; {1900 + new Date().getYear()} , made with{" "}
-                <Favorite className={classes.icon} /> by Boxify
-              </div>
-            </div>
-          }
-        />
+        <Footer />
       </div>
     );
   }
