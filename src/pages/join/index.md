@@ -1,5 +1,5 @@
 ---
-templateKey: -page
+templateKey: blog-post-page
 title: עלינו
 ---
 המטרה שלנו היא לגרום לכם לשמור על אורח חיים בריא ופעיל
