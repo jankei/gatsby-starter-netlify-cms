@@ -22,7 +22,8 @@ export const AboutPageTemplate = ({
               <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
                 {title}
               </h2>
-              <h3 className="has-text-weight-semibold is-size-2">{heading}</h3>
+              <p>{heading}</p>
+              <br />
               <p>{description}</p>
             </div>
           </div>
@@ -49,6 +50,8 @@ const AboutPage = ({ data }) => {
         title={post.frontmatter.title}
         heading={post.frontmatter.heading}
         description={post.frontmatter.description}
+        equipmentTitle={post.frontmatter.equipmentTitle}
+        equipmentDescription={post.frontmatter.equipmentDescription}
       />
     </Layout>
   );
@@ -68,6 +71,8 @@ export const aboutPageQuery = graphql`
         title
         heading
         description
+        equipmentTitle
+        equipmentDescription
       }
     }
   }

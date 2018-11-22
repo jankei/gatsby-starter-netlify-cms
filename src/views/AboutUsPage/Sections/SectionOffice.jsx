@@ -26,12 +26,8 @@ function SectionOffice(props) {
           sm={8}
           className={classNames(classes.mrAuto, classes.mlAuto)}
         >
-          <h2 className={classes.title}>Our office is our second home</h2>
-          <h4 className={classes.description}>
-            Here are some pictures from our office. You can see the place looks
-            like a palace and is fully equiped with everything you need to get
-            the job done.
-          </h4>
+          <h2 className={classes.title}>{props.title}</h2>
+          <h4 className={classes.description}>{props.description}</h4>
         </GridItem>
       </GridContainer>
       <GridContainer>

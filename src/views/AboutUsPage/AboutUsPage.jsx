@@ -53,7 +53,10 @@ class AboutUsPage extends React.Component {
             <PageContent content={this.props.heading} />
             <SectionDescription content={this.props.description} />
             <SectionTeam />
-            <SectionOffice />
+            <SectionOffice
+              title={this.props.equipmentTitle}
+              description={this.props.equipmentDescription}
+            />
             <SectionContact />
           </div>
         </div>
