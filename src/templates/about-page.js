@@ -40,7 +40,8 @@ const AboutPage = ({ data }) => {
       <AboutUsPage
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
-        content={post.html}
+        heading={post.frontmatter.heading}
+        description={post.frontmatter.description}
       />
     </Layout>
   );
@@ -58,6 +59,8 @@ export const aboutPageQuery = graphql`
       html
       frontmatter {
         title
+        heading
+        description
       }
     }
   }

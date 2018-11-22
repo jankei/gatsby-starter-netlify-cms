@@ -50,8 +50,8 @@ class AboutUsPage extends React.Component {
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
             <PageContent content={this.props.title} />
-            <PageContent content={this.props.content} />
-            <SectionDescription />
+            <PageContent content={this.props.heading} />
+            <SectionDescription content={this.props.description} />
             <SectionTeam />
             <SectionOffice />
             <SectionContact />
