@@ -5,7 +5,12 @@ import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 import AboutUsPage from "../views/AboutUsPage/AboutUsPage";
 
-export const AboutPageTemplate = ({ title, content, contentComponent }) => {
+export const AboutPageTemplate = ({
+  title,
+  heading,
+  description,
+  contentComponent
+}) => {
   const PageContent = contentComponent || Content;
 
   return (
@@ -17,7 +22,8 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
               <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
                 {title}
               </h2>
-              <PageContent className="content" content={content} />
+              <h3 className="has-text-weight-semibold is-size-2">{heading}</h3>
+              <p>{description}</p>
             </div>
           </div>
         </div>
@@ -28,7 +34,8 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
 
 AboutPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
-  content: PropTypes.string,
+  heading: PropTypes.string,
+  description: PropTypes.string,
   contentComponent: PropTypes.func
 };
 

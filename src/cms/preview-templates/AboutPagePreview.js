@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import AboutUsPage from "../../views/AboutUsPage/AboutUsPage";
+import { AboutPageTemplate } from "../../templates/about-page";
 
-const AboutPagePreview = ({ entry, widgetFor }) => (
-  <AboutUsPage
+const AboutPagePreview = ({ entry }) => (
+  <AboutPageTemplate
     title={entry.getIn(["data", "title"])}
     heading={entry.getIn(["data", "heading"])}
     description={entry.getIn(["data", "description"])}
@@ -13,8 +13,7 @@ const AboutPagePreview = ({ entry, widgetFor }) => (
 AboutPagePreview.propTypes = {
   entry: PropTypes.shape({
     getIn: PropTypes.func
-  }),
-  widgetFor: PropTypes.func
+  })
 };
 
 export default AboutPagePreview;
