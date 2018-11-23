@@ -1,25 +1,17 @@
 import React from "react";
 import classNames from "classnames";
 import withStyles from "@material-ui/core/styles/withStyles";
-import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
-import Favorite from "@material-ui/icons/Favorite";
 
 import withRoot from "../../withRoot";
 
 import Header from "../../components/Header/Header.jsx";
 import Footer from "../../components/Footer";
-import GridContainer from "../../components/Grid/GridContainer.jsx";
-import GridItem from "../../components/Grid/GridItem.jsx";
-import Button from "../../components/CustomButtons/Button.jsx";
 import HeaderLinks from "../../components/Header/HeaderLinks.jsx";
 import Parallax from "../../components/Parallax/Parallax.jsx";
 
-import Content, { HTMLContent } from "../../components/Content";
 import landingPageStyle from "../../assets/jss/material-kit-pro-react/views/landingPageStyle.jsx";
 
 import SectionProduct from "./Sections/SectionProduct.jsx";
-import SectionTeam from "./Sections/SectionTeam.jsx";
 import SectionWork from "./Sections/SectionWork.jsx";
 
 const dashboardRoutes = [];

@@ -25,7 +25,6 @@ import Button from "../../components/CustomButtons/Button.jsx";
 import Footer from "../../components/Footer/Footer.jsx";
 
 import contactUsStyle from "../../assets/jss/material-kit-pro-react/views/contactUsStyle.jsx";
-import Content, { HTMLContent } from "../../components/Content";
 
 const CustomSkinMap = withScriptjs(
   withGoogleMap(props => (
@@ -109,7 +108,6 @@ class ContactUsPage extends React.Component {
   }
   render() {
     const { classes } = this.props;
-    const PageContent = this.props.contentComponent || Content;
     return (
       <div>
         <Header

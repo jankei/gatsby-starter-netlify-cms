@@ -1,26 +1,18 @@
 import React from "react";
 import classNames from "classnames";
-import { Link } from "gatsby";
 import withStyles from "@material-ui/core/styles/withStyles";
-import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
-import Favorite from "@material-ui/icons/Favorite";
 
 import Header from "../../components/Header/Header.jsx";
-import GridContainer from "../../components/Grid/GridContainer.jsx";
-import GridItem from "../../components/Grid/GridItem.jsx";
 import Parallax from "../../components/Parallax/Parallax.jsx";
 import Footer from "../../components/Footer";
 import HeaderLinks from "../../components/Header/HeaderLinks.jsx";
 
 import SectionDescription from "./Sections/SectionDescription.jsx";
 import SectionTeam from "./Sections/SectionTeam.jsx";
-import SectionServices from "./Sections/SectionServices.jsx";
 import SectionOffice from "./Sections/SectionOffice.jsx";
 import SectionContact from "./Sections/SectionContact";
 
 import aboutUsStyle from "../../assets/jss/material-kit-pro-react/views/aboutUsStyle.jsx";
-import Content, { HTMLContent } from "../../components/Content";
 
 class AboutUsPage extends React.Component {
   componentDidMount() {
@@ -29,7 +21,6 @@ class AboutUsPage extends React.Component {
   }
   render() {
     const { classes } = this.props;
-    const PageContent = this.props.contentComponent || Content;
     return (
       <div>
         <Header
@@ -49,15 +40,29 @@ class AboutUsPage extends React.Component {
         />
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
-            <PageContent content={this.props.title} />
-            <PageContent content={this.props.heading} />
             <SectionDescription content={this.props.description} />
-            <SectionTeam />
+            <SectionTeam
+              title={this.props.teamTitle}
+              description={this.props.teamDescription}
+              coach1={this.props.coach1}
+              coach2={this.props.coach2}
+              coach3={this.props.coach3}
+              coach4={this.props.coach4}
+              coach5={this.props.coach5}
+              coach6={this.props.coach6}
+              coach7={this.props.coach7}
+              coach8={this.props.coach8}
+              coach9={this.props.coach9}
+            />
             <SectionOffice
               title={this.props.equipmentTitle}
               description={this.props.equipmentDescription}
             />
-            <SectionContact />
+            <SectionContact
+              title={this.props.contactTitle}
+              description={this.props.contactDescription}
+              button={this.props.contactButton}
+            />
           </div>
         </div>
         <Footer />

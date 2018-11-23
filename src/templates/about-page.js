@@ -47,11 +47,23 @@ const AboutPage = ({ data }) => {
     <Layout classPrefix="ap">
       <AboutUsPage
         contentComponent={HTMLContent}
-        title={post.frontmatter.title}
-        heading={post.frontmatter.heading}
         description={post.frontmatter.description}
+        teamTitle={post.frontmatter.teamTitle}
+        teamDescription={post.frontmatter.teamDescription}
+        coach1={post.frontmatter.coach1}
+        coach2={post.frontmatter.coach2}
+        coach3={post.frontmatter.coach3}
+        coach4={post.frontmatter.coach4}
+        coach5={post.frontmatter.coach5}
+        coach6={post.frontmatter.coach6}
+        coach7={post.frontmatter.coach7}
+        coach8={post.frontmatter.coach8}
+        coach9={post.frontmatter.coach9}
         equipmentTitle={post.frontmatter.equipmentTitle}
         equipmentDescription={post.frontmatter.equipmentDescription}
+        contactTitle={post.frontmatter.contactTitle}
+        contactDescription={post.frontmatter.contactDescription}
+        contactButton={post.frontmatter.contactButton}
       />
     </Layout>
   );
@@ -68,11 +80,23 @@ export const aboutPageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
-        title
-        heading
         description
+        teamTitle
+        teamDescription
+        coach1
+        coach2
+        coach3
+        coach4
+        coach5
+        coach6
+        coach7
+        coach8
+        coach9
         equipmentTitle
         equipmentDescription
+        contactTitle
+        contactDescription
+        contactButton
       }
     }
   }
