@@ -44,15 +44,7 @@ class AboutUsPage extends React.Component {
             <SectionTeam
               title={this.props.teamTitle}
               description={this.props.teamDescription}
-              coach1={this.props.coach1}
-              coach2={this.props.coach2}
-              coach3={this.props.coach3}
-              coach4={this.props.coach4}
-              coach5={this.props.coach5}
-              coach6={this.props.coach6}
-              coach7={this.props.coach7}
-              coach8={this.props.coach8}
-              coach9={this.props.coach9}
+              coaches={this.props.coaches}
             />
             <SectionOffice
               title={this.props.equipmentTitle}

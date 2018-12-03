@@ -50,15 +50,7 @@ const AboutPage = ({ data }) => {
         description={post.frontmatter.description}
         teamTitle={post.frontmatter.teamTitle}
         teamDescription={post.frontmatter.teamDescription}
-        coach1={post.frontmatter.coach1}
-        coach2={post.frontmatter.coach2}
-        coach3={post.frontmatter.coach3}
-        coach4={post.frontmatter.coach4}
-        coach5={post.frontmatter.coach5}
-        coach6={post.frontmatter.coach6}
-        coach7={post.frontmatter.coach7}
-        coach8={post.frontmatter.coach8}
-        coach9={post.frontmatter.coach9}
+        coaches={post.frontmatter.coaches}
         equipmentTitle={post.frontmatter.equipmentTitle}
         equipmentDescription={post.frontmatter.equipmentDescription}
         contactTitle={post.frontmatter.contactTitle}
@@ -83,15 +75,11 @@ export const aboutPageQuery = graphql`
         description
         teamTitle
         teamDescription
-        coach1
-        coach2
-        coach3
-        coach4
-        coach5
-        coach6
-        coach7
-        coach8
-        coach9
+        coaches {
+          title
+          facebook
+          instagram
+        }
         equipmentTitle
         equipmentDescription
         contactTitle

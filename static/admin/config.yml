@@ -32,15 +32,16 @@ collections:
           - {label: "Description", name: "description", widget: "markdown"}
           - {label: "Team Title", name: "teamTitle", widget: "string"}
           - {label: "Team Description", name: "teamDescription", widget: "markdown"}
-          - {label: "Coach 1", name: "coach1", widget: "string"}
-          - {label: "Coach 2", name: "coach2", widget: "string"}
-          - {label: "Coach 3", name: "coach3", widget: "string"}
-          - {label: "Coach 4", name: "coach4", widget: "string"}
-          - {label: "Coach 5", name: "coach5", widget: "string"}
-          - {label: "Coach 6", name: "coach6", widget: "string"}
-          - {label: "Coach 7", name: "coach7", widget: "string"}
-          - {label: "Coach 8", name: "coach8", widget: "string"}
-          - {label: "Coach 9", name: "coach9", widget: "string"}
+          - {label: "Coaches",
+            name: "coaches",
+            widget: "list",
+            fields:
+              [
+                {label: "Coach Name", name: "title", widget: "string"},
+                {label: "Facebook link", name: "facebook", widget: "string"},
+                {label: "Instagram link", name: "instagram", widget: "string"}
+              ]
+            }
           - {label: "Equipment Title", name: "equipmentTitle", widget: "string"}
           - {label: "Equipment Description", name: "equipmentDescription", widget: "markdown"}
           - {label: "Contact Title", name: "contactTitle", widget: "string"}
